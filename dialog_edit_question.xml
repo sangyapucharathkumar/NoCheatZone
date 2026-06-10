@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question Text"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer Configuration"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/primary"/>
+
+    <!-- MCQ Options -->
+    <LinearLayout
+        android:id="@+id/dialog_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit options and select the correct answer:"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/dialog_options_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="4dp">
+                <RadioButton android:id="@+id/dialog_radio_a" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/dialog_opt_a" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Option A" android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="4dp">
+                <RadioButton android:id="@+id/dialog_radio_b" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/dialog_opt_b" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Option B" android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="4dp">
+                <RadioButton android:id="@+id/dialog_radio_c" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/dialog_opt_c" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Option C" android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="4dp">
+                <RadioButton android:id="@+id/dialog_radio_d" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/dialog_opt_d" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Option D" android:inputType="textMultiLine" />
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Text Answer -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_text_answer_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correct Answer"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_text_answer_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
