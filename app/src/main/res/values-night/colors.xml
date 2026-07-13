@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary – Indigo (lighter for dark mode visibility) -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="primary_light">#818CF8</color>
+
+    <!-- Secondary – Violet -->
+    <color name="secondary">#8B5CF6</color>
+
+    <!-- Surface & Background - Beautiful Deep Dark Slate -->
+    <color name="surface">#0F172A</color> <!-- Slate 900 -->
+    <color name="card_bg">#1E293B</color> <!-- Slate 800 -->
+
+    <!-- Text for dark mode -->
+    <color name="text_primary">#F8FAFC</color> <!-- Slate 50 (Almost White) -->
+    <color name="text_secondary">#94A3B8</color> <!-- Slate 400 (Light Gray) -->
+    <color name="text_hint">#64748B</color> <!-- Slate 500 -->
+
+    <!-- Semantic (dark tuned versions) -->
+    <color name="success">#34D399</color>
+    <color name="danger">#F87171</color>
+    <color name="amber">#FBBF24</color>
+
+
+    <!-- Divider / border -->
+    <color name="divider">#334155</color> <!-- Slate 700 -->
+
+    <!-- Dynamic layout colors (Map to Dark Surfaces) -->
+    <color name="main_bg">#0F172A</color> <!-- Slate 900 -->
+    <color name="bottom_nav_bg">#0F172A</color> <!-- Slate 900 -->
+
+    <!-- UI tuning -->
+    <color name="option_bg_surface">#2A3446</color>
+    <color name="option_bg_selected">#334155</color>
+    <color name="option_border">#475569</color>
+    <color name="option_border_selected">#818CF8</color>
+</resources>

@@ -1,2 +1,0 @@
-# NoCheatZone
-Major Project

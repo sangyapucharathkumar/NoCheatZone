@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary – Indigo -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_light">#818CF8</color>
+
+    <!-- Secondary – Violet -->
+    <color name="secondary">#7C3AED</color>
+
+    <!-- Surface & Background -->
+    <color name="surface">#F5F3FF</color>
+    <color name="card_bg">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1E1B4B</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_hint">#6B7280</color>
+
+    <!-- Semantic -->
+    <color name="success">#10B981</color>
+    <color name="danger">#EF4444</color>
+    <color name="amber">#F59E0B</color>
+
+
+    <!-- Divider / border -->
+    <color name="divider">#E5E7EB</color>
+
+    <!-- Dynamic layout colors -->
+    <color name="main_bg">#EEE7FD</color>
+    <color name="bottom_nav_bg">#FFFFFF</color>
+
+    <!-- UI tuning -->
+    <color name="option_bg_surface">#F3F4F6</color>
+    <color name="option_bg_selected">#E8EDFF</color>
+    <color name="option_border">#D1D5DB</color>
+    <color name="option_border_selected">#4F46E5</color>
+</resources>
