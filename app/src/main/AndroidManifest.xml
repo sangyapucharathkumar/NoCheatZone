@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".NoCheatZoneApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MySplash"
+        tools:targetApi="31">
+
+        <!-- Splash screen is the launcher -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main app activities -->
+        <activity android:name=".Main_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Login_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Register_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Settings_Activity" android:exported="false" android:configChanges="uiMode" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".CreateExamActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".ReviewQuestionsActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".ScanQuestionActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".AddQuestionsActivity" android:exported="false" android:windowSoftInputMode="adjustResize" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Exams_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Host_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Hosted_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".HostResultActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".Join_Exam_Activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".joined_activity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".StudentExamActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ResultActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".SubmitedActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+        <activity android:name=".MonitoringActivity" android:exported="false" android:theme="@style/Theme.NoCheatZone" />
+
+    </application>
+</manifest>
